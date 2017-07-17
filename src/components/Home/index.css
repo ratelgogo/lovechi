@@ -1,0 +1,201 @@
+body {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body a {
+  color: #ffe8e1;
+}
+body a:hover {
+  color: #6b717e;
+}
+body div.slide {
+  font-size: 1em;
+}
+@media only screen and (min-width: 0px) and (max-width: 559px) {
+  body div.slide {
+    font-size: 10vw;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 759px) {
+  body div.slide {
+    font-size: 10vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 959px) {
+  body div.slide {
+    font-size: 8vw;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1300px) {
+  body div.slide {
+    font-size: 8vw;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  body div.slide {
+    font-size: 6vw;
+  }
+}
+body div.slide .logo {
+  font-size: 4em;
+  font-family: monospace;
+  position: static;
+  padding-top: 10%;
+}
+body div.slide .logo2 {
+  padding-top: 0px;
+  margin-top: -30%;
+}
+body div.slide #title {
+  color: #808080;
+  padding-top: 300px;
+}
+@media only screen and (min-width: 0px) and (max-width: 559px) {
+  body div.slide #title {
+    padding-top: 250px;
+  }
+}
+body div.slide .sub-title {
+  padding-top: 200px;
+  color: #808080;
+}
+@media only screen and (min-width: 0px) and (max-width: 559px) {
+  body div.slide .sub-title {
+    padding-top: 150px;
+  }
+}
+body .arrow-up,
+body .arrow-down,
+body .arrow-right,
+body .arrow-left {
+  width: 0;
+  height: 1;
+}
+body .arrow-down,
+body .arrow-up {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+body .arrow-down,
+body .arrow-down-2 {
+  border-bottom: 0px;
+}
+body .arrow-up,
+body .arrow-up-2 {
+  border-top: 0px;
+}
+body .arrow-up {
+  border-top: 50px solid #d4dccd;
+}
+body .arrow-down {
+  border-bottom: 50px solid #d4dccd;
+}
+body .arrow-left,
+body .arrow-right {
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+}
+body .arrow-left {
+  border-right: 50px solid #fff;
+}
+body .arrow-right {
+  border-left: 50px solid #fff;
+}
+body .abs-center,
+body .abs-top,
+body .abs-bottom {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+body .abs-top {
+  top: 0;
+}
+body .abs-bottom {
+  bottom: 0;
+}
+body .top-100 {
+  top: 100%;
+}
+body .top-200 {
+  top: 200%;
+}
+body .arrow-title-1,
+body .arrow-title-2,
+body .arrow-title-3 {
+  width: 0;
+  height: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 12%;
+  border-top: 50px solid #6b717e;
+}
+body .arrow-title-2 {
+  top: 16%;
+  border-top: 50px solid #fac9b8;
+}
+body .arrow-title-3 {
+  top: 20%;
+  border-top: 50px solid #ffe8e1;
+}
+body .ice {
+  color: #d4dccd;
+}
+body .ice-b {
+  background-color: #d4dccd;
+}
+body .coal {
+  color: #6b717e;
+}
+body .coal-b {
+  background-color: #6b717e;
+}
+body .warm {
+  color: #ffe8e1;
+}
+body .warm-b {
+  background-color: #ffe8e1;
+}
+body .pink {
+  color: #ffc4d1;
+}
+body .pink-b {
+  background-color: #ffc4d1;
+}
+body .orange {
+  color: #fac9b8;
+}
+body .orange-b {
+  background-color: #fac9b8;
+}
+@media only screen and (min-width: 0px) and (max-width: 559px) {
+  div.top-nav {
+    display: none;
+  }
+}
+.btn {
+  margin: auto !important;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.btn:hover {
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+@media only screen and (min-width: 0px) and (max-width: 559px) {
+  .btn {
+    padding: 0px;
+    text-align: center;
+    width: 70px;
+    /*height: 30px;*/
+  }
+}
+.topnav-button {
+  padding-left: 3%;
+}
+

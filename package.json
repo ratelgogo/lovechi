@@ -1,0 +1,30 @@
+{
+  "name": "lovechi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "fullpage-react": "^3.0.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-fullscreen": "^0.1.0",
+    "react-image-gallery": "^0.8.3",
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.2.0",
+    "eslint-config-react-app": "^1.0.5",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "^7.1.0",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://ratelgogo.github.io/lovechi"
+}

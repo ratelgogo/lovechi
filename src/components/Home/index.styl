@@ -1,0 +1,218 @@
+$arrowPx = 50px
+$ice = #D4DCCD
+$coal = #6B717E
+$warm = #FFE8E1
+$pink = #FFC4D1
+$orange = #FAC9B8
+$gray = gray
+
+// Typography
+// -------------------------
+font-family-primary = "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+font-size-xxsmall = 10px
+font-size-xsmall = 12px
+font-size-small = 14px
+font-size-medium = 16px
+font-size-xmedium = 18px
+font-size-large = 20px
+font-size-xlarge = 24px
+font-size-xxlarge = 28px
+font-size-xxxlarge = 32px
+font-size-grande = 36px
+font-size-xgrande = 40px
+font-size-xxgrande = 46px
+font-size-xxxgrande = 52px
+font-size-poster = 72px
+font-size-billboard = 128px
+
+// MEDIA QUERIES AND BREAKPOINTS
+bp-mobile-min = 320px
+bp-mobile-tweak-lower-max = 439px
+bp-mobile-tweak = 440px
+bp-mobile-max = 559px
+bp-tablet-min = 560px
+bp-tablet-tweak-lower-max = 659px
+bp-tablet-tweak = 660px
+bp-tablet-max = 759px
+bp-desktop-md-min = 760px
+bp-desktop-md-tweak-lower-max = 859px
+bp-desktop-md-tweak = 860px
+bp-desktop-md-max = 959px
+bp-desktop-min = 960px
+bp-desktop-tweak-lower-max = 1079px
+bp-desktop-tweak = 1080px
+bp-desktop-max = 1300px
+
+// media query formatting strings... use with built-in s() function
+mq-query-minmax-fstr = "only screen and (min-width: %s) and (max-width: %s)"
+mq-query-min-fstr = "only screen and (min-width: %s)"
+
+// media query strings... use like @media mq-mobile
+mq-mobile = s(mq-query-minmax-fstr, 0px, bp-mobile-max)
+mq-tablet = s(mq-query-minmax-fstr, bp-tablet-min, bp-tablet-max)
+mq-desktop-md = s(mq-query-minmax-fstr, bp-desktop-md-min, bp-desktop-md-max)
+mq-desktop = s(mq-query-minmax-fstr, bp-desktop-min, bp-desktop-max)
+mq-max = s(mq-query-min-fstr, bp-desktop-max)
+
+body
+  text-align center
+  font-family font-family-primary
+  a
+    color $warm
+    &:hover
+      color $coal
+  div.slide
+    font-size 1em
+    @media mq-mobile
+      font-size 10vw
+    @media mq-tablet
+      font-size 10vw
+    @media mq-desktop-md
+      font-size 8vw
+    @media mq-desktop
+      font-size 8vw
+    @media mq-max
+      font-size 6vw
+
+    .logo
+      font-size 4em
+      font-family monospace
+      position static
+      padding-top 10%
+
+    .logo2
+      padding-top 0px
+      margin-top -30%
+
+    #title
+      color $gray
+      padding-top 300px
+      @media mq-mobile
+        padding-top 250px
+
+    .sub-title
+      padding-top 200px
+      color $gray
+      @media mq-mobile
+        padding-top 150px
+
+  .arrow-up
+  .arrow-down
+  .arrow-right
+  .arrow-left
+    width 0
+    height 1
+
+  .arrow-down
+  .arrow-up
+    border-left $arrowPx solid transparent
+    border-right $arrowPx solid transparent
+
+  .arrow-down, .arrow-down-2
+    border-bottom 0px
+  .arrow-up, .arrow-up-2
+    border-top 0px
+
+  .arrow-up
+    border-top $arrowPx solid $ice
+
+  .arrow-down
+    border-bottom $arrowPx solid $ice
+
+  .arrow-left
+  .arrow-right
+    border-bottom $arrowPx solid transparent
+    border-top $arrowPx solid transparent
+
+  .arrow-left
+    border-right $arrowPx solid white
+  .arrow-right
+    border-left $arrowPx solid white
+
+  .abs-center
+  .abs-top
+  .abs-bottom
+    position absolute
+    margin-left auto
+    margin-right auto
+    left 0
+    right 0
+
+  .abs-top
+    top 0
+  .abs-bottom
+    bottom 0
+
+  .top-100
+    top 100%
+  .top-200
+    top 200%
+
+  .arrow-title-1
+  .arrow-title-2
+  .arrow-title-3
+    width 0
+    height 1
+    position absolute
+    margin-left auto
+    margin-right auto
+    left 0
+    right 0
+    top 12%
+    border-top $arrowPx solid $coal
+  .arrow-title-2
+    top 16%
+    border-top $arrowPx solid $orange
+  .arrow-title-3
+    top 20%
+    border-top $arrowPx solid $warm
+
+  .ice
+    color $ice
+  .ice-b
+    background-color $ice
+
+  .coal
+    color $coal
+  .coal-b
+    backround-color $coal
+
+  .warm
+    color $warm
+  .warm-b
+    background-color $warm
+
+  .pink
+    color $pink
+  .pink-b
+    background-color $pink
+
+  .orange
+    color $orange
+  .orange-b
+    background-color $orange
+
+////////////V2
+
+  div.top-nav
+    @media mq-mobile
+      display none
+
+  button
+    margin 0px !important
+    background-color white
+    border 1px solid #EEEEEE
+    &:hover
+      background-color #EEEEEE
+      border 1px solid #EEEEEE
+
+    @media mq-mobile
+      padding 0px
+      text-align center
+      width 70px
+      height 30px
+
+
+  .topnav-button
+    padding-left 3%
