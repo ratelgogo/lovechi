@@ -16,6 +16,7 @@
     "eslint-config-react-app": "^1.0.5",
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "gh-pages": "^1.0.0",
     "react-scripts": "1.0.10"
   },
   "scripts": {
@@ -26,5 +27,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://ratelgogo.github.io/lovechi"
+  "homepage": "http://lovechi.me"
 }
